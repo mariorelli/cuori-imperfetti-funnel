@@ -6,16 +6,7 @@
 <title>Cuori Imperfetti — Entra nel Circolo Lettrici</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prata&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Beau+Rivage&family=Cormorant+SC:wght@500;600&display=swap" rel="stylesheet">
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2531318');
-</script>
-<!-- End MailerLite Universal -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Beau+Rivage&family=Cormorant+SC:wght@500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --cipria: #F3CE9E;
@@ -31,14 +22,14 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Lora', serif;
     background: var(--cream);
     color: var(--ink);
     line-height: 1.75;
     font-size: 19px;
     font-weight: 400;
   }
-  h1, h2, h3 { font-family: 'Prata', serif; font-weight: 400; }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 400; }
 
   .hero {
     background:
@@ -216,7 +207,7 @@
     border: 1.5px solid var(--cipria);
     border-radius: 30px;
     font-size: 17px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Lora', serif;
     background: var(--cream);
     text-align: center;
     color: var(--ink);
@@ -232,15 +223,23 @@
     border: none;
     padding: 16px 20px;
     border-radius: 30px;
-    font-size: 16.5px;
-    font-weight: 500;
-    font-family: 'Cormorant SC', serif;
-    letter-spacing: 0.8px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Lora', serif;
+    letter-spacing: 0.2px;
     cursor: pointer;
     transition: transform .15s ease, box-shadow .15s ease;
     box-shadow: 0 12px 26px rgba(142,54,32,0.32);
   }
   form.signup-form button:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(142,54,32,0.4); }
+  .ml-success-msg {
+    text-align: center;
+    color: var(--rose-deep);
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    padding: 10px 0 4px;
+  }
   .disclaimer {
     font-size: 12.5px;
     color: var(--ink-soft);
@@ -327,7 +326,17 @@
         <li>I primi 3 capitoli di «Non dovevo desiderarti» in un unico PDF, comodo da leggere ovunque</li>
       </ul>
 
-      <div class="ml-embedded" data-form="5QbSTJ"></div>
+      <div id="mlb2-44100789" class="ml-subscribe-form ml-subscribe-form-44100789">
+        <div class="row-form">
+          <form class="ml-block-form signup-form" action="https://assets.mailerlite.com/jsonp/2531318/forms/193886062946289626/subscribe" data-code="" method="post" target="_blank">
+            <input aria-label="email" aria-required="true" type="email" name="fields[email]" placeholder="Il tuo indirizzo email" required autocomplete="email">
+            <input type="hidden" name="ml-submit" value="1">
+            <button type="submit">Entra nel Circolo Lettrici</button>
+            <input type="hidden" name="anticsrf" value="true">
+          </form>
+        </div>
+        <div class="row-success ml-success-msg" style="display:none;">Fatto! Controlla la tua email: il regalo sta arrivando.</div>
+      </div>
 
       <p class="disclaimer">Niente spam: solo email dedicate a chi ama questa storia. Puoi disiscriverti quando vuoi.</p>
     </div>
@@ -343,6 +352,18 @@
     <div class="author-seal"><img src="assets/logo-autore.png" alt="Mario Relli — logo autore"></div>
     © 2026 Mario Relli — Cuori Imperfetti
   </footer>
+
+<script>
+  function ml_webform_success_44100789() {
+    var $ = ml_jQuery || jQuery;
+    $('.ml-subscribe-form-44100789 .row-success').show();
+    $('.ml-subscribe-form-44100789 .row-form').hide();
+  }
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+<script>
+  fetch("https://assets.mailerlite.com/jsonp/2531318/forms/193886062946289626/takel")
+</script>
 
 </body>
 </html>
