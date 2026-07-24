@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuori Imperfetti — Entra nel Circolo Lettrici</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Beau+Rivage&family=Cormorant+SC:wght@500;600&display=swap" rel="stylesheet">
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2531318');
+</script>
+<!-- End MailerLite Universal -->
+<style>
+  :root {
+    --cipria: #F5DCD3;
+    --cipria-light: #FBEDE7;
+    --rose: #C98A82;
+    --rose-deep: #A8635F;
+    --gold: #C9A46A;
+    --gold-light: #E9D3AC;
+    --cream: #FFF9F4;
+    --white: #FFFFFF;
+    --ink: #4A3436;
+    --ink-soft: #8A6B6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'EB Garamond', serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.75;
+    font-size: 19px;
+    font-weight: 400;
+  }
+  h1, h2, h3 { font-family: 'Prata', serif; font-weight: 400; }
+
+  .hero {
+    background:
+      radial-gradient(ellipse at 15% -10%, rgba(201,164,106,0.28), transparent 55%),
+      linear-gradient(160deg, var(--cipria-light) 0%, var(--cipria) 100%);
+    color: var(--ink);
+    padding: 72px 24px 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    bottom: -200px; left: 50%;
+    transform: translateX(-50%);
+    width: 640px; height: 380px;
+    background: radial-gradient(ellipse, rgba(255,255,255,0.55), transparent 70%);
+  }
+  .brand-seal {
+    margin: 0 auto 8px;
+  }
+  .brand-seal img {
+    display: block;
+    width: 170px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .kicker {
+    letter-spacing: 4px;
+    color: var(--rose-deep);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 600;
+    position: relative;
+  }
+  .hero h1 {
+    font-size: 46px;
+    margin: 24px auto 10px;
+    max-width: 740px;
+    font-weight: 400;
+    position: relative;
+    line-height: 1.3;
+    color: var(--ink);
+    font-style: italic;
+  }
+  .hero h1 .script {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 62px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--rose-deep);
+    display: inline-block;
+    line-height: 1;
+    padding: 0 4px;
+  }
+  .flourish {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 22px auto 22px;
+    color: var(--gold);
+  }
+  .flourish .line { width: 56px; height: 1px; background: var(--gold); opacity: 0.7; }
+  .flourish .dot { font-size: 13px; color: var(--rose); }
+  .hero p.sub {
+    font-size: 18.5px;
+    font-style: italic;
+    color: var(--ink-soft);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    font-weight: 400;
+  }
+
+  .covers {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    margin: 54px auto 0;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 900px;
+  }
+  .cover {
+    width: 195px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(168,99,95,0.28);
+    transform: translateY(0) rotate(0deg);
+    transition: transform .3s ease;
+    border: 5px solid var(--white);
+  }
+  .cover:nth-child(1) { transform: rotate(-2.5deg); }
+  .cover:nth-child(3) { transform: rotate(2.5deg); }
+  .cover:hover { transform: translateY(-10px) rotate(0deg); }
+  .cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .signup-wrap {
+    background: var(--cream);
+    padding: 0 24px 90px;
+    margin-top: -56px;
+    position: relative;
+  }
+  .signup-card {
+    max-width: 640px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 22px;
+    box-shadow: 0 24px 60px rgba(168,99,95,0.14);
+    padding: 52px 46px;
+    text-align: center;
+    border: 1px solid var(--cipria-light);
+  }
+  .signup-card .eyebrow {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 32px;
+    color: var(--rose);
+    margin-bottom: 2px;
+  }
+  .signup-card h2 {
+    font-size: 26px;
+    color: var(--ink);
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  .signup-card p.intro {
+    color: var(--ink-soft);
+    font-size: 18px;
+    margin-bottom: 28px;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .features {
+    text-align: left;
+    max-width: 460px;
+    margin: 0 auto 32px;
+    list-style: none;
+  }
+  .features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .features li::before {
+    content: "♥";
+    flex-shrink: 0;
+    font-size: 12px;
+    color: var(--rose);
+    margin-top: 5px;
+  }
+
+  /* ===== FORM — sostituisci con l'embed di MailerLite (vedi guida) ===== */
+  form.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  form.signup-form input[type="email"] {
+    padding: 15px 20px;
+    border: 1.5px solid var(--cipria);
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: 'EB Garamond', serif;
+    background: var(--cream);
+    text-align: center;
+    color: var(--ink);
+  }
+  form.signup-form input[type="email"]::placeholder { color: var(--ink-soft); opacity: 0.7; }
+  form.signup-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--rose);
+  }
+  form.signup-form button {
+    background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+    color: var(--white);
+    border: none;
+    padding: 16px 20px;
+    border-radius: 30px;
+    font-size: 16.5px;
+    font-weight: 500;
+    font-family: 'Cormorant SC', serif;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+    box-shadow: 0 12px 26px rgba(168,99,95,0.32);
+  }
+  form.signup-form button:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(168,99,95,0.4); }
+  .disclaimer {
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-top: 18px;
+    font-style: italic;
+    opacity: 0.85;
+  }
+
+  .synopsis {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 70px 24px 30px;
+    text-align: center;
+  }
+  .synopsis .eyebrow {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 30px;
+    color: var(--rose);
+    margin-bottom: 2px;
+  }
+  .synopsis h3 {
+    color: var(--ink);
+    font-size: 23px;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  .synopsis p {
+    color: var(--ink-soft);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  footer {
+    text-align: center;
+    padding: 48px 24px 40px;
+    color: var(--ink-soft);
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.8;
+  }
+  footer .author-seal {
+    margin: 0 auto 10px;
+  }
+  footer .author-seal img {
+    display: block;
+    width: 96px;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="brand-seal"><img src="assets/logo-collana.png" alt="Cuori Imperfetti — logo della collana"></div>
+    <div class="kicker">Cuori Imperfetti · Circolo Lettrici</div>
+    <h1>Firenze, Venezia, Roma.<br>Un amore che non doveva <span class="script">succedere</span></h1>
+    <div class="flourish"><span class="line"></span><span class="dot">❦</span><span class="line"></span></div>
+    <p class="sub">Entra nel Circolo Lettrici: sconto di lancio su ogni nuovo libro, accesso anticipato alle uscite e un racconto bonus esclusivo, mai pubblicato altrove.</p>
+
+    <div class="covers">
+      <div class="cover">
+        <img src="covers/vol1.jpg" alt="Non dovevo desiderarti — Cuori Imperfetti Vol. I">
+      </div>
+      <div class="cover">
+        <img src="covers/vol2.jpg" alt="Non dovevo sceglierti — Cuori Imperfetti Vol. II">
+      </div>
+      <div class="cover">
+        <img src="covers/vol3.jpg" alt="Non dovevo perderti — Cuori Imperfetti Vol. III">
+      </div>
+    </div>
+  </section>
+
+  <div class="signup-wrap">
+    <div class="signup-card">
+      <div class="eyebrow">Non un'anteprima. Un posto in prima fila.</div>
+      <h2>Entra nel Circolo Lettrici</h2>
+      <p class="intro">Elena Rinaldi torna a Firenze convinta che quella città le restituirà solo dolore. Invece trova Lorenzo De Santis — e una storia che li porterà da Firenze a Roma. Iscriviti per restare vicino a questa storia (e alle prossime): niente promesse vuote, solo vantaggi concreti per chi legge davvero.</p>
+
+      <ul class="features">
+        <li>Sconto di lancio riservato su ogni nuovo libro della saga, prima che arrivi al prezzo pieno</li>
+        <li>Il racconto bonus esclusivo «Non dovevo sorprenderti», mai pubblicato altrove</li>
+        <li>I primi 3 capitoli di «Non dovevo desiderarti» in un unico PDF, comodo da leggere ovunque</li>
+      </ul>
+
+      <div class="ml-embedded" data-form="5QbSTJ"></div>
+
+      <p class="disclaimer">Niente spam: solo email dedicate a chi ama questa storia. Puoi disiscriverti quando vuoi.</p>
+    </div>
+  </div>
+
+  <div class="synopsis">
+    <div class="eyebrow">La saga</div>
+    <h3>Cuori Imperfetti</h3>
+    <p>Un romance contemporaneo autoconclusivo-ma-collegato: Elena e Lorenzo attraversano tre città italiane in una storia continua su fiducia, paura e seconde possibilità. «Non dovevo desiderarti» (Firenze), «Non dovevo sceglierti» (Venezia) e «Non dovevo perderti» (Roma) sono disponibili in volume singolo o nel cofanetto completo.</p>
+  </div>
+
+  <footer>
+    <div class="author-seal"><img src="assets/logo-autore.png" alt="Mario Relli — logo autore"></div>
+    © 2026 Mario Relli — Cuori Imperfetti
+  </footer>
+
+</body>
+</html>

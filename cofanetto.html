@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuori Imperfetti — Il Cofanetto Completo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Beau+Rivage&family=Cormorant+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cipria: #F5DCD3;
+    --cipria-light: #FBEDE7;
+    --rose: #C98A82;
+    --rose-deep: #A8635F;
+    --gold: #C9A46A;
+    --gold-light: #E9D3AC;
+    --cream: #FFF9F4;
+    --white: #FFFFFF;
+    --ink: #4A3436;
+    --ink-soft: #8A6B6A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'EB Garamond', serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.75;
+    font-size: 19px;
+    font-weight: 400;
+  }
+  h1, h2, h3 { font-family: 'Prata', serif; font-weight: 400; }
+
+  .hero {
+    background:
+      radial-gradient(ellipse at 80% -10%, rgba(201,164,106,0.28), transparent 55%),
+      linear-gradient(160deg, var(--cipria-light) 0%, var(--cipria) 100%);
+    color: var(--ink);
+    padding: 64px 24px 70px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .brand-seal {
+    margin: 0 auto 6px;
+  }
+  .brand-seal img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .kicker {
+    letter-spacing: 4px;
+    color: var(--rose-deep);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 600;
+    position: relative;
+  }
+  .hero h1 {
+    font-size: 32px;
+    margin: 20px auto 6px;
+    max-width: 760px;
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+    line-height: 1.45;
+    color: var(--ink);
+  }
+  .flourish {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 18px auto 20px;
+    color: var(--gold);
+  }
+  .flourish .line { width: 60px; height: 1px; background: var(--gold); opacity: 0.7; }
+  .flourish .dot { font-size: 13px; color: var(--rose); }
+  .hero p.sub {
+    font-size: 17.5px;
+    color: var(--ink-soft);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    font-style: italic;
+  }
+
+  .price-banner {
+    max-width: 560px;
+    margin: 36px auto 0;
+    background: var(--white);
+    border: 1px solid var(--cipria-light);
+    border-radius: 16px;
+    padding: 22px 28px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    box-shadow: 0 16px 36px rgba(168,99,95,0.14);
+  }
+  .price-banner .old { text-decoration: line-through; color: var(--ink-soft); font-size: 15px; }
+  .price-banner .new { font-size: 28px; font-family: 'Prata', serif; color: var(--rose-deep); }
+  .price-banner .cta-btn {
+    background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+    color: var(--white);
+    border: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-size: 16.5px;
+    font-weight: 500;
+    font-family: 'Cormorant SC', serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 12px 26px rgba(168,99,95,0.32);
+  }
+
+  .books {
+    max-width: 1000px;
+    margin: 72px auto 0;
+    padding: 0 24px;
+    text-align: center;
+  }
+  .books .eyebrow {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 30px;
+    color: var(--rose);
+    margin-bottom: 2px;
+  }
+  .books h2 {
+    color: var(--ink);
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .book-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 16px 36px rgba(168,99,95,0.14);
+    text-align: left;
+    border: 1px solid var(--cipria-light);
+  }
+  .book-card .cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .book-card .info {
+    padding: 20px 22px 4px;
+  }
+  .book-card .vol { font-size: 11px; letter-spacing: 2px; color: var(--gold); font-weight: 600; font-family: 'Cormorant SC', serif; }
+  .book-card .title { font-size: 19px; font-weight: 400; margin: 6px 0 4px; color: var(--ink); font-family: 'Prata', serif; }
+  .book-card .city { font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--rose-deep); }
+  .book-card .body { padding: 12px 22px 28px; }
+  .book-card .body p { font-size: 15.5px; color: var(--ink-soft); font-style: italic; }
+
+  .bonus {
+    max-width: 760px;
+    margin: 74px auto 0;
+    padding: 44px 36px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 16px 36px rgba(168,99,95,0.1);
+    border: 1px solid var(--cipria-light);
+    text-align: center;
+  }
+  .bonus .eyebrow {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 28px;
+    color: var(--rose);
+    margin-bottom: 2px;
+  }
+  .bonus h3 { color: var(--ink); font-size: 21px; margin-bottom: 20px; font-weight: 400; }
+  .bonus ul { list-style: none; max-width: 520px; margin: 0 auto; text-align: left; }
+  .bonus li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .bonus li::before {
+    content: "♥";
+    flex-shrink: 0;
+    font-size: 12px;
+    color: var(--rose);
+    margin-top: 5px;
+  }
+
+  .reviews {
+    max-width: 900px;
+    margin: 74px auto 0;
+    padding: 0 24px;
+    text-align: center;
+  }
+  .reviews .eyebrow {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 28px;
+    color: var(--rose);
+    margin-bottom: 2px;
+  }
+  .reviews h3 { color: var(--ink); font-size: 21px; margin-bottom: 32px; font-weight: 400; }
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .review-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 26px 22px;
+    box-shadow: 0 10px 24px rgba(168,99,95,0.1);
+    text-align: left;
+    border: 1px solid var(--cipria-light);
+  }
+  .review-card .stars { color: var(--gold); font-size: 14px; margin-bottom: 10px; }
+  .review-card p.quote { font-size: 15px; color: var(--ink-soft); font-style: italic; margin-bottom: 10px; }
+  .review-card p.name { font-size: 12px; color: var(--ink-soft); opacity: 0.8; }
+
+  .final-cta {
+    max-width: 720px;
+    margin: 84px auto 0;
+    padding: 54px 44px;
+    background:
+      radial-gradient(ellipse at 20% 0%, rgba(201,164,106,0.28), transparent 55%),
+      linear-gradient(160deg, var(--cipria-light) 0%, var(--cipria) 100%);
+    border-radius: 22px;
+    text-align: center;
+    color: var(--ink);
+  }
+  .final-cta .eyebrow {
+    font-family: 'Beau Rivage', cursive;
+    font-size: 30px;
+    color: var(--rose-deep);
+    margin-bottom: 2px;
+  }
+  .final-cta h2 { font-size: 26px; margin-bottom: 14px; color: var(--ink); font-weight: 400; }
+  .final-cta p { color: var(--ink-soft); margin-bottom: 28px; font-size: 16px; font-style: italic; }
+  .final-cta .price-row {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .final-cta .old { text-decoration: line-through; color: var(--ink-soft); font-size: 16px; }
+  .final-cta .new { font-size: 30px; font-family: 'Prata', serif; color: var(--rose-deep); }
+  .final-cta a.cta-btn {
+    background: linear-gradient(135deg, var(--rose), var(--rose-deep));
+    color: var(--white);
+    border: none;
+    padding: 17px 36px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Cormorant SC', serif;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 14px 30px rgba(168,99,95,0.32);
+  }
+  .final-cta .secondary {
+    display: block;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    font-style: italic;
+    text-decoration: none;
+  }
+  .guarantee {
+    max-width: 600px;
+    margin: 32px auto 0;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-style: italic;
+    opacity: 0.85;
+  }
+
+  footer {
+    text-align: center;
+    padding: 52px 24px 40px;
+    color: var(--ink-soft);
+    font-size: 13px;
+    font-style: italic;
+    opacity: 0.8;
+  }
+  footer .author-seal {
+    margin: 0 auto 10px;
+  }
+  footer .author-seal img {
+    display: block;
+    width: 96px;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+
+  @media (max-width: 720px) {
+    .book-grid, .review-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="brand-seal"><img src="assets/logo-collana.png" alt="Cuori Imperfetti — logo della collana"></div>
+    <div class="kicker">Cuori Imperfetti · Il Cofanetto Completo</div>
+    <h1>"Vivi tutta la storia di Elena e Lorenzo.<br>Da Firenze a Roma, un amore da ricostruire pagina dopo pagina."</h1>
+    <div class="flourish"><span class="line"></span><span class="dot">❦</span><span class="line"></span></div>
+    <p class="sub">I tre volumi della saga, in un unico cofanetto, con bonus esclusivi riservati a chi lo acquista oggi.</p>
+
+    <div class="price-banner">
+      <div>
+        <span class="old">Prezzo dei 3 volumi singoli: [PREZZO PIENO]</span><br>
+        <span class="new">[PREZZO SCONTATO]</span>
+      </div>
+      <!-- ISTRUZIONI: collega questo bottone alla tua pagina/checkout reale -->
+      <a href="#acquista" class="cta-btn">Voglio tutta la storia →</a>
+    </div>
+  </section>
+
+  <section class="books">
+    <div class="eyebrow">I tre volumi</div>
+    <h2>La saga completa</h2>
+    <div class="book-grid">
+      <div class="book-card v1">
+        <div class="cover"><img src="covers/vol1.jpg" alt="Non dovevo desiderarti — Cuori Imperfetti Vol. I"></div>
+        <div class="info">
+          <div class="vol">VOL. I</div>
+          <div class="title">Non dovevo desiderarti</div>
+          <div class="city">Firenze</div>
+        </div>
+        <div class="body">
+          <p>"A volte, l'amore non bussa. Torna." Elena torna nella città che voleva evitare per sempre, e incontra Lorenzo De Santis.</p>
+        </div>
+      </div>
+      <div class="book-card v2">
+        <div class="cover"><img src="covers/vol2.jpg" alt="Non dovevo sceglierti — Cuori Imperfetti Vol. II"></div>
+        <div class="info">
+          <div class="vol">VOL. II</div>
+          <div class="title">Non dovevo sceglierti</div>
+          <div class="city">Venezia</div>
+        </div>
+        <div class="body">
+          <p>"Ci sono scelte che fanno paura. E altre che cambiano tutto." A Venezia, il passato di Lorenzo riaffiora e mette tutto alla prova.</p>
+        </div>
+      </div>
+      <div class="book-card v3">
+        <div class="cover"><img src="covers/vol3.jpg" alt="Non dovevo perderti — Cuori Imperfetti Vol. III"></div>
+        <div class="info">
+          <div class="vol">VOL. III</div>
+          <div class="title">Non dovevo perderti</div>
+          <div class="city">Roma</div>
+        </div>
+        <div class="body">
+          <p>"L'amore non basta per restare. Serve il coraggio di scegliere." A Roma arriva la resa dei conti tra Elena e Lorenzo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bonus">
+    <div class="eyebrow">Solo per te</div>
+    <h3>Bonus esclusivo del cofanetto</h3>
+    <ul>
+      <li>Un epilogo extra sul futuro di Elena e Lorenzo, disponibile solo per chi acquista il cofanetto.</li>
+      <li>Le pagine complete del "quaderno di Katerina", il documento al centro dei segreti della saga.</li>
+    </ul>
+  </section>
+
+  <section class="reviews">
+    <div class="eyebrow">Voci di lettrici</div>
+    <h3>Cosa dicono di Cuori Imperfetti</h3>
+    <div class="review-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"[Spazio riservato alla prima recensione]"</p>
+        <p class="name">— Lettrice</p>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"[Spazio riservato alla seconda recensione]"</p>
+        <p class="name">— Lettrice</p>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"[Spazio riservato alla terza recensione]"</p>
+        <p class="name">— Lettrice</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta" id="acquista">
+    <div class="eyebrow">Cuori Imperfetti</div>
+    <h2>Il cofanetto completo</h2>
+    <p>Vol. I + Vol. II + Vol. III, con i bonus esclusivi inclusi. Offerta valida per un periodo limitato.</p>
+    <div class="price-row">
+      <span class="old">[PREZZO PIENO]</span>
+      <span class="new">[PREZZO SCONTATO]</span>
+    </div>
+    <!-- ISTRUZIONI: sostituisci "#" con il link reale al tuo checkout / pagina di acquisto -->
+    <a href="#" class="cta-btn">Voglio tutta la storia di Elena e Lorenzo</a>
+    <a href="#" class="secondary">Acquista i volumi singolarmente</a>
+  </section>
+
+  <p class="guarantee">Contenuto disponibile subito dopo l'acquisto, leggibile su qualsiasi dispositivo.</p>
+
+  <footer>
+    <div class="author-seal"><img src="assets/logo-autore.png" alt="Mario Relli — logo autore"></div>
+    © 2026 Mario Relli — Cuori Imperfetti
+  </footer>
+
+</body>
+</html>
