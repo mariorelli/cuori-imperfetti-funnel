@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2009277919948856');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2009277919948856&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scopri il romance scritto per te — Cuori Imperfetti</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Scopri il romance scritto per te — Cuori Imperfetti">
+<meta property="og:description" content="5 domande veloci per scoprire quale storia d'amore — e quale città italiana — è fatta apposta per te.">
+<meta property="og:image" content="https://quiz.mariorelli.it/covers/quiz-preview.jpg">
+<meta property="og:image:width" content="280">
+<meta property="og:image:height" content="280">
+<meta property="og:url" content="https://quiz.mariorelli.it/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Scopri il romance scritto per te — Cuori Imperfetti">
+<meta name="twitter:description" content="5 domande veloci per scoprire quale storia d'amore — e quale città italiana — è fatta apposta per te.">
+<meta name="twitter:image" content="https://quiz.mariorelli.it/covers/quiz-preview.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #4A3342;
+    --surface: #55404C;
+    --surface-soft: #5C4451;
+    --pink: #FF3D6E;
+    --pink-deep: #E62356;
+    --gold: #FFB648;
+    --white: #FFFFFF;
+    --ink: #FFFFFF;
+    --ink-soft: #E3C9D2;
+    --line: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Urbanist', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  h1, h2, h3 { font-family: 'Chivo', sans-serif; font-weight: 700; }
+
+  .hero {
+    background: var(--bg);
+    color: var(--ink);
+    padding: 34px 24px 16px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -60px; left: -40px;
+    width: 160px; height: 160px;
+    background: var(--gold);
+    opacity: 0.35;
+    border-radius: 50%;
+    filter: blur(30px);
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: -30px; right: -50px;
+    width: 180px; height: 180px;
+    background: var(--pink);
+    opacity: 0.22;
+    border-radius: 50%;
+    filter: blur(35px);
+  }
+  .hero.compact h1, .hero.compact .sub { display: none; }
+  .hero.compact { padding-bottom: 6px; }
+  .hero.quiz-mode .kicker { display: none; }
+  .brand-seal { margin: 0 auto 8px; }
+  .brand-seal img { display: block; width: 84px; height: auto; margin: 0 auto; }
+  .kicker {
+    display: inline-block;
+    letter-spacing: 2px;
+    color: var(--white);
+    background: transparent;
+    padding: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+  }
+  .kicker .kicker-highlight { color: var(--pink); }
+  .hero h1 {
+    font-size: 27px;
+    margin: 14px auto 6px;
+    max-width: 640px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.25;
+  }
+  .hero p.sub {
+    font-size: 15px;
+    font-style: normal;
+    color: var(--ink-soft);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .hero p.sub .sub-highlight {
+    color: var(--pink);
+    font-weight: 700;
+  }
+  .hero h1 .highlight {
+    display: inline-block;
+    background: var(--pink);
+    color: var(--white);
+    padding: 1px 10px;
+    border-radius: 6px;
+  }
+
+  .quiz-wrap {
+    max-width: 560px;
+    margin: 18px auto 60px;
+    padding: 0 24px;
+    position: relative;
+  }
+  .quiz-card {
+    background: var(--surface);
+    border-radius: 24px;
+    padding: 36px 32px;
+    border: 1px solid var(--line);
+  }
+
+  .progress {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 26px;
+  }
+  .progress .step {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--surface-soft);
+    transition: background .2s ease, transform .2s ease;
+  }
+  .progress .step.active { background: var(--pink); transform: scale(1.3); }
+  .progress .step.done { background: var(--pink-deep); }
+
+  .q-eyebrow {
+    font-family: 'Chivo', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--pink);
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .q-text {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 26px;
+    line-height: 1.35;
+  }
+  .q-text .q-highlight { color: var(--pink); }
+  .options { display: flex; flex-direction: column; gap: 12px; }
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    text-align: left;
+    background: var(--surface-soft);
+    border: 2px solid transparent;
+    border-radius: 16px;
+    padding: 12px 20px;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15.5px;
+    font-weight: 500;
+    color: var(--ink);
+    cursor: pointer;
+    transition: border-color .15s ease, background .15s ease, transform .1s ease;
+  }
+  .option-letter {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--pink);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .option:hover { border-color: var(--pink); background: #664C59; transform: translateY(-1px); }
+  .option:active { transform: translateY(0); background: var(--pink); border-color: var(--pink-deep); }
+
+  .result-eyebrow {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--pink);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .result-title {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: var(--ink);
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .result-cover {
+    display: block;
+    width: 150px;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    border: 4px solid var(--surface-soft);
+  }
+  .result-desc {
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: normal;
+  }
+
+  .features {
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto 26px;
+    list-style: none;
+  }
+  .features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .features li::before {
+    content: "♥";
+    flex-shrink: 0;
+    font-size: 12px;
+    color: var(--pink);
+    margin-top: 5px;
+  }
+
+  form.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  form.signup-form input[type="email"] {
+    padding: 15px 20px;
+    border: 1.5px solid var(--line);
+    border-radius: 30px;
+    font-size: 15.5px;
+    font-family: 'Urbanist', sans-serif;
+    background: var(--surface-soft);
+    text-align: center;
+    color: var(--ink);
+  }
+  form.signup-form input[type="email"]::placeholder { color: var(--ink-soft); }
+  form.signup-form input[type="email"]:focus { outline: none; border-color: var(--pink); }
+  form.signup-form button {
+    background: var(--pink);
+    color: var(--white);
+    border: none;
+    padding: 16px 20px;
+    border-radius: 30px;
+    font-size: 15.5px;
+    font-weight: 700;
+    font-family: 'Chivo', sans-serif;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+  }
+  .disclaimer {
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-top: 16px;
+    font-style: normal;
+    text-align: center;
+    opacity: 0.85;
+  }
+  .result-benefits {
+    list-style: none;
+    max-width: 300px;
+    margin: 16px auto 0;
+    text-align: left;
+  }
+  .result-benefits li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    font-size: 14.5px;
+    color: var(--ink);
+  }
+  .result-benefits li::before {
+    content: "\2665";
+    flex-shrink: 0;
+    font-size: 11px;
+    color: var(--pink);
+    margin-top: 4px;
+  }
+  .result-teaser {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    text-align: center;
+    margin: 18px 0 10px;
+    font-style: normal;
+    opacity: 0.9;
+  }
+  .ml-success-msg {
+    text-align: center;
+    color: var(--pink);
+    font-family: 'Chivo', sans-serif;
+    font-weight: 600;
+    font-size: 15.5px;
+    font-style: normal;
+    padding: 10px 0 4px;
+  }
+  .reveal-link {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--pink);
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--pink);
+    padding-bottom: 2px;
+  }
+  .reveal-link:hover { color: var(--ink); border-color: var(--ink); }
+  .result-cta {
+    display: block;
+    text-align: center;
+    background: var(--pink);
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 700;
+    font-size: 15.5px;
+    padding: 16px 20px;
+    border-radius: 30px;
+    margin-top: 22px;
+  }
+  .result-cta:hover { background: var(--pink-deep); }
+  .retake {
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    font-style: normal;
+  }
+  .retake:hover { color: var(--pink); }
+
+  footer {
+    text-align: center;
+    padding: 10px 24px 50px;
+    color: var(--ink-soft);
+    font-size: 13px;
+    font-style: normal;
+    opacity: 0.7;
+  }
+  footer .author-seal { margin: 0 auto 10px; }
+  footer .author-seal img { display: block; width: 84px; height: auto; margin: 0 auto; opacity: 0.85; filter: brightness(0) invert(1); }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+  <section class="hero quiz-mode">
+    <div class="kicker">Scelto da chi ama <span class="kicker-highlight">le storie vere</span></div>
+    <h1>Scopri il romance <span class="highlight">scritto per te</span> 💌</h1>
+    <p class="sub">5 domande, una sola risposta vera: qual è <span class="sub-highlight">la tua storia d'amore</span>? 👇</p>
+  </section>
+
+  <div class="quiz-wrap">
+    <div class="quiz-card">
+
+      <div id="progress" class="progress"></div>
+
+      <div id="question-screen">
+        <div class="q-text" id="q-text"></div>
+        <div class="options" id="q-options"></div>
+      </div>
+
+      <div id="result-screen" class="hidden">
+
+        <div id="result-gate">
+          <div class="result-eyebrow">💌 IL TUO PROFILO ROMANTICO È PRONTO</div>
+          <p class="result-desc">Dalle tue risposte emerge un modo preciso di vivere l'amore. Inserisci la tua email per sbloccare subito il risultato.</p>
+          <ul class="result-benefits">
+            <li>Quale tipo di storia ti rappresenta</li>
+            <li>Cosa cerchi davvero in una relazione</li>
+            <li>Quale romance è stato scelto per te</li>
+          </ul>
+          <p class="result-teaser">Il tuo profilo romantico è&hellip; 🔒</p>
+
+          <div id="mlb2-44558836" class="ml-subscribe-form ml-subscribe-form-44558836 quiz-profile-form">
+            <div class="row-form">
+              <form class="ml-block-form signup-form" action="https://assets.mailerlite.com/jsonp/2531318/forms/195054473239857032/subscribe" data-code="" method="post" target="_blank">
+                <input aria-label="email" aria-required="true" type="email" name="fields[email]" placeholder="Inserisci il tuo indirizzo email" required autocomplete="email">
+                <input type="hidden" name="fields[quiz_profile]" value="A">
+                <input type="hidden" name="ml-submit" value="1">
+                <button type="submit">RICEVI IL MIO RISULTATO 💌</button>
+                <input type="hidden" name="anticsrf" value="true">
+              </form>
+            </div>
+            <div class="row-success ml-success-msg" style="display:none;">Fatto! Controlla la tua email.</div>
+          </div>
+
+          <div id="mlb2-44558989" class="ml-subscribe-form ml-subscribe-form-44558989 quiz-profile-form hidden">
+            <div class="row-form">
+              <form class="ml-block-form signup-form" action="https://assets.mailerlite.com/jsonp/2531318/forms/195054539574871194/subscribe" data-code="" method="post" target="_blank">
+                <input aria-label="email" aria-required="true" type="email" name="fields[email]" placeholder="Inserisci il tuo indirizzo email" required autocomplete="email">
+                <input type="hidden" name="fields[quiz_profile]" value="B">
+                <input type="hidden" name="ml-submit" value="1">
+                <button type="submit">RICEVI IL MIO RISULTATO 💌</button>
+                <input type="hidden" name="anticsrf" value="true">
+              </form>
+            </div>
+            <div class="row-success ml-success-msg" style="display:none;">Fatto! Controlla la tua email.</div>
+          </div>
+
+          <div id="mlb2-44558999" class="ml-subscribe-form ml-subscribe-form-44558999 quiz-profile-form hidden">
+            <div class="row-form">
+              <form class="ml-block-form signup-form" action="https://assets.mailerlite.com/jsonp/2531318/forms/195054541051266724/subscribe" data-code="" method="post" target="_blank">
+                <input aria-label="email" aria-required="true" type="email" name="fields[email]" placeholder="Inserisci il tuo indirizzo email" required autocomplete="email">
+                <input type="hidden" name="fields[quiz_profile]" value="C">
+                <input type="hidden" name="ml-submit" value="1">
+                <button type="submit">RICEVI IL MIO RISULTATO 💌</button>
+                <input type="hidden" name="anticsrf" value="true">
+              </form>
+            </div>
+            <div class="row-success ml-success-msg" style="display:none;">Fatto! Controlla la tua email.</div>
+          </div>
+
+          <p class="disclaimer">Niente spam. Potrai disiscriverti in qualsiasi momento.</p>
+        </div>
+
+        <div id="result-confirmation" class="hidden">
+          <div class="result-eyebrow">Controlla la tua email 💌</div>
+          <div class="result-title">Il tuo profilo romantico è stato inviato.</div>
+          <p class="result-desc">Apri l'email che ti abbiamo appena mandato per scoprire:</p>
+          <ul class="result-benefits">
+            <li>quale tipo di storia ti rappresenta</li>
+            <li>cosa cerchi davvero in una relazione</li>
+            <li>quale romance è stato scelto per te</li>
+          </ul>
+          <p class="disclaimer">Non la trovi? Controlla anche le cartelle Promozioni, Posta indesiderata o Spam.<br>Mittente: Mario Relli &mdash; info@mariorelli.it<br>L'email potrebbe impiegare qualche minuto ad arrivare.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="author-seal"><img src="assets/logo-autore.png" alt="Mario Relli — logo autore"></div>
+    © 2026 Mario Relli — Cuori Imperfetti
+  </footer>
+
+<script>
+  const questions = [
+    {
+      text: "Ricevi un messaggio da un ex dopo mesi di silenzio. Cosa fai?",
+      options: [
+        { label: "Rispondi con cautela: una parte di te vuole sapere come sta davvero", value: "A" },
+        { label: "Non rispondi subito, ma non riesci a smettere di pensarci", value: "B" },
+        { label: "Rispondi subito, dritta al punto: meglio chiarire una volta per tutte", value: "C" },
+      ],
+    },
+    {
+      text: "Sei a cena fuori e la persona che ti piace si siede per caso proprio accanto a te. Come reagisci?",
+      options: [
+        { label: "Ti blocchi un secondo, poi lasci scorrere la conversazione senza forzarla", value: "A" },
+        { label: "Osservi ogni dettaglio, cercando di capire se è davvero un caso", value: "B" },
+        { label: "Cogli l'occasione al volo e attacchi bottone per prima", value: "C" },
+      ],
+    },
+    {
+      text: "Hai litigato con qualcuno a cui tieni. Cosa fai il giorno dopo?",
+      options: [
+        { label: "Aspetti che sia lui/lei a fare il primo passo, sperando che accada", value: "A" },
+        { label: "Continui a rimuginare, cercando di capire cosa non è stato detto davvero", value: "B" },
+        { label: "Lo affronti subito: i silenzi ti stanno stretti", value: "C" },
+      ],
+    },
+    {
+      text: "Trovi per caso una vecchia foto o un vecchio messaggio di una storia importante. Cosa provi?",
+      options: [
+        { label: "Un tuffo al cuore dolceamaro, con quel pensiero che non va via: \"e se...\"", value: "A" },
+        { label: "Curiosità più che altro: noti dettagli che ti erano sfuggiti la prima volta", value: "B" },
+        { label: "Sollievo: quella storia è chiusa, e va bene così", value: "C" },
+      ],
+    },
+    {
+      text: "Guardando un film romantico, il momento che ti scioglie di più è...",
+      options: [
+        { label: "Quando i due si ritrovano dopo essersi persi", value: "A" },
+        { label: "Quando viene finalmente svelato un segreto che cambia tutto", value: "B" },
+        { label: "Quando uno dei due fa un gesto plateale, senza più aspettare", value: "C" },
+      ],
+    },
+  ];
+
+  const results = {
+    A: {
+      title: "Second Chance sotto il sole di Firenze",
+      desc: "Tu sei quella che crede che l'amore, quando è vero, sappia aspettare anche anni pur di tornare. Come Elena, che a Firenze ha ritrovato tutto quello che pensava di aver perso per sempre — in «Non dovevo desiderarti».",
+      cover: "covers/vol1.jpg",
+    },
+    B: {
+      title: "Slow Burn pieno di segreti tra le calli di Venezia",
+      desc: "Tu non ti fidi subito — e fai bene. Per te l'amore vero si costruisce sguardo dopo sguardo, segreto dopo segreto, fino a quando non puoi più far finta di niente. Come tra le calli di Venezia, in «Non dovevo sceglierti».",
+      cover: "covers/vol2.jpg",
+    },
+    C: {
+      title: "La Resa dei Conti sotto il cielo di Roma",
+      desc: "Tu non hai paura della verità, nemmeno quando fa male. Vuoi un amore che si guadagna, non uno che si accontenta — come Elena e Lorenzo, a Roma, quando tutto viene finalmente a galla in «Non dovevo perderti».",
+      cover: "covers/vol3.jpg",
+    },
+  };
+
+  let current = 0;
+  const answers = [];
+
+  // ===== META PIXEL - TRACCIAMENTO FUNNEL QUIZ (eventi custom, nessuna duplicazione del base code) =====
+  const quizTracking = {
+    viewContentSent: false,
+    quizStarted: false,
+    questionsCompleted: new Set(),
+    questionsViewed: new Set(),
+    emailScreenViewed: false,
+    emailSubmitClicked: false,
+    leadSent: false,
+    confirmationViewed: false,
+  };
+
+  // 1. Apertura del quiz (pagina caricata correttamente) - una sola volta per pageview
+  try {
+    if (!quizTracking.viewContentSent && typeof fbq === "function") {
+      quizTracking.viewContentSent = true;
+      fbq('track', 'ViewContent', {
+        content_name: 'Quiz Romance Mario Relli',
+        content_category: 'Quiz'
+      });
+    }
+  } catch (e) {}
+
+  const progressEl = document.getElementById("progress");
+  const qText = document.getElementById("q-text");
+  const qOptions = document.getElementById("q-options");
+  const questionScreen = document.getElementById("question-screen");
+  const resultScreen = document.getElementById("result-screen");
+
+  function renderProgress() {
+    progressEl.innerHTML = "";
+    for (let i = 0; i < questions.length; i++) {
+      const dot = document.createElement("div");
+      dot.className = "step" + (i === current ? " active" : i < current ? " done" : "");
+      progressEl.appendChild(dot);
+    }
+  }
+
+  function renderQuestion() {
+    renderProgress();
+    const q = questions[current];
+
+    // Domanda diventa visibile ora - un evento per numero di domanda, una sola volta per caricamento pagina
+    try {
+      const questionNumber = current + 1;
+      if (!quizTracking.questionsViewed.has(questionNumber) && typeof fbq === "function") {
+        quizTracking.questionsViewed.add(questionNumber);
+        fbq('trackCustom', 'QuizQuestionViewed', {
+          question_number: questionNumber
+        });
+      }
+    } catch (e) {}
+
+    const match = q.text.match(/^(.*?[.!])\s+(.*)$/s);
+    if (match) {
+      qText.innerHTML = match[1] + '<br><span class="q-highlight">' + match[2] + '</span>';
+    } else {
+      qText.textContent = q.text;
+    }
+    qOptions.innerHTML = "";
+    q.options.forEach((opt, i) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "option";
+      const letter = document.createElement("span");
+      letter.className = "option-letter";
+      letter.textContent = String.fromCharCode(65 + i);
+      const label = document.createElement("span");
+      label.textContent = opt.label;
+      btn.appendChild(letter);
+      btn.appendChild(label);
+      btn.addEventListener("click", () => selectAnswer(opt.value));
+      qOptions.appendChild(btn);
+    });
+  }
+
+  // 5. Clic sul pulsante email (submit del form) - parte sempre al click/submit,
+  // indipendentemente dall'esito. Nessun preventDefault: non interferisce con l'invio reale gestito da MailerLite.
+  try {
+    document.querySelectorAll(".quiz-profile-form form.signup-form").forEach(function (emailForm) {
+      emailForm.addEventListener("submit", function () {
+        try {
+          if (!quizTracking.emailSubmitClicked && typeof fbq === "function") {
+            quizTracking.emailSubmitClicked = true;
+            fbq('trackCustom', 'QuizEmailSubmitClicked');
+          }
+        } catch (e) {}
+      });
+    });
+  } catch (e) {}
+
+  function selectAnswer(value) {
+    // 2. Inizio effettivo del quiz - solo al primo clic su una risposta (non al caricamento pagina)
+    try {
+      if (!quizTracking.quizStarted && typeof fbq === "function") {
+        quizTracking.quizStarted = true;
+        fbq('trackCustom', 'QuizStarted');
+      }
+    } catch (e) {}
+
+    // 3. Completamento della domanda corrente - solo nome evento, nessun dato della risposta
+    try {
+      const questionNumber = current + 1;
+      if (!quizTracking.questionsCompleted.has(questionNumber) && typeof fbq === "function") {
+        quizTracking.questionsCompleted.add(questionNumber);
+        fbq('trackCustom', 'QuizQuestion' + questionNumber + 'Completed');
+      }
+    } catch (e) {}
+
+    answers.push(value);
+    current++;
+    if (current < questions.length) {
+      renderQuestion();
+    } else {
+      showResult();
+    }
+  }
+
+  function showResult() {
+    const tally = { A: 0, B: 0, C: 0 };
+    answers.forEach((a) => tally[a]++);
+    let winner = "A";
+    let max = -1;
+    for (const key in tally) {
+      if (tally[key] > max) { max = tally[key]; winner = key; }
+    }
+    // Il profilo calcolato (winner) determina quale dei tre form dedicati mostrare.
+    // Nessun testo/immagine del risultato viene mostrato in pagina: il risultato
+    // viene comunicato esclusivamente via email dopo l'iscrizione.
+    const profileFormIds = { A: "mlb2-44558836", B: "mlb2-44558989", C: "mlb2-44558999" };
+    document.querySelectorAll(".quiz-profile-form").forEach(function (el) {
+      el.classList.add("hidden");
+    });
+    const activeForm = document.getElementById(profileFormIds[winner]);
+    if (activeForm) activeForm.classList.remove("hidden");
+
+    questionScreen.classList.add("hidden");
+    resultScreen.classList.remove("hidden");
+    document.getElementById("result-gate").classList.remove("hidden");
+    document.getElementById("result-confirmation").classList.add("hidden");
+    document.querySelector(".hero").classList.remove("quiz-mode");
+    document.querySelector(".hero").classList.add("compact");
+
+    // 4. Visualizzazione schermata email - la vera schermata finale e' visibile ora
+    try {
+      if (!quizTracking.emailScreenViewed && typeof fbq === "function") {
+        quizTracking.emailScreenViewed = true;
+        fbq('trackCustom', 'QuizEmailScreenViewed');
+      }
+    } catch (e) {}
+  }
+
+  renderQuestion();
+</script>
+
+<script>
+  // Percorso dedicato al quiz (Soluzione B): tre form separati (A/B/C), un'unica
+  // funzione di successo condivisa. La funzione storica ml_webform_success_44100789
+  // NON esiste piu' in questa pagina perche' il form 44100789 non e' piu' presente
+  // nel DOM del quiz - resta invariata solo nella landing page, che la usa ancora.
+  function quizHandleEmailSuccess(groot) {
+    var $ = ml_jQuery || jQuery;
+    $('.ml-subscribe-form-' + groot + ' .row-success').show();
+    $('.ml-subscribe-form-' + groot + ' .row-form').hide();
+
+    // 6. Email acquisita correttamente - SOLO qui, dopo conferma reale di MailerLite (mai al click, mai su errore)
+    try {
+      if (typeof quizTracking !== "undefined" && !quizTracking.leadSent && typeof fbq === "function") {
+        quizTracking.leadSent = true;
+        fbq('track', 'Lead', {
+          content_name: 'Quiz Romance Mario Relli',
+          content_category: 'Quiz Email'
+        });
+      }
+    } catch (e) {}
+
+    setTimeout(function () {
+      document.getElementById("result-gate").classList.add("hidden");
+      document.getElementById("result-confirmation").classList.remove("hidden");
+
+      // 7. Visualizzazione della schermata di conferma (il risultato si legge solo via email)
+      try {
+        if (typeof quizTracking !== "undefined" && !quizTracking.confirmationViewed && typeof fbq === "function") {
+          quizTracking.confirmationViewed = true;
+          fbq('trackCustom', 'QuizEmailConfirmationViewed');
+        }
+      } catch (e) {}
+    }, 600);
+  }
+
+  function ml_webform_success_44558836() { quizHandleEmailSuccess('44558836'); }
+  function ml_webform_success_44558989() { quizHandleEmailSuccess('44558989'); }
+  function ml_webform_success_44558999() { quizHandleEmailSuccess('44558999'); }
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+<script>
+  fetch("https://assets.mailerlite.com/jsonp/2531318/forms/195054473239857032/takel");
+  fetch("https://assets.mailerlite.com/jsonp/2531318/forms/195054539574871194/takel");
+  fetch("https://assets.mailerlite.com/jsonp/2531318/forms/195054541051266724/takel");
+</script>
+
+</body>
+</html>
